@@ -4,11 +4,148 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Static HTML Site Boilerplate</title>
+  <title>Test</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
-
-<body>
-    <h1>Hello Static HTML!</h1>
-    <a href="/page.html">Link to my other page</a>
-    <img src="/static/tail.png" alt="code"/>
-</body>
+  <body>
+    <div class="main-wrapper">
+      <div class="container">
+          <div class="navbar">
+              <div class="navbar-city navbar-btn">
+                <img src="./static/house.svg" alt="" class="navbar-img">
+                <span class="navbar-text">В черте города</span>
+              </div>
+              <div class="navbar-country navbar-btn">
+                <img src="./static/house-2.svg" alt="" class="navbar-img">
+                <span class="navbar-text">За городом</span>
+              </div>
+              <div class="navbar-map navbar-btn">
+                <img src="./static/map1.svg" alt="" class="navbar-img">
+                <span class="navbar-text">На карте</span>
+              </div>
+            </div>
+      </div>
+      <div class="container">
+        <div class="items" id="tractItems">
+              <div class="items-tract">
+                <input type="text" class="items-search" placeholder="Поиск" id="tract">
+                <div class="items-cube__list" id="search">
+                  <div class="items-block">
+                    <label><input type="checkbox" class="check" value="123">Червишевский</label>
+                    <span>123</span>
+                  </div>
+                  <div class="items-block">
+                    <label><input type="checkbox" class="check" value="1234">Московский</label>
+                    <span>1234</span>
+                  </div>
+                  <div class="items-block">
+                    <label><input type="checkbox" class="check" value="430">Тобольский</label>
+                    <span>430</span>
+                  </div>
+                  <div class="items-block">
+                    <label><input type="checkbox" class="check" value="89">Салаирский</label>
+                    <span>89</span>
+                  </div>
+                </div>
+              </div>
+              <div class="items-locality">
+                  <input type="text" class="items-search" placeholder="Поиск" id="local">
+                  <div class="items-cube__list">
+                    <div class="items-block">
+                      <label><input type="checkbox">Луговое</label>
+                      <span>123</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Зеленые холмы</label>
+                      <span>1234</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Кулаково</label>
+                      <span>89</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Червишево</label>
+                      <span>7</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Якуши</label>
+                      <span>96</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Ярд</label>
+                      <span>89</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="items-partnership">
+                  <input type="text" class="items-search" placeholder="Поиск" id="tract">
+                  <div class="items-cube__list">
+                    <div class="items-block">
+                      <label><input type="checkbox">Элита</label>
+                      <span>123</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Тура</label>
+                      <span>1234</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Зеленый бор</label>
+                      <span>430</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Автомобилист</label>
+                      <span>12</span>
+                    </div>
+                    <div class="items-block">
+                        <label><input type="checkbox">Строитель</label>
+                        <span>598</span>
+                      </div>
+                    </div>
+              </div>
+              <div class="items-village">
+                  <input type="text" class="items-search" placeholder="Поиск" id="tract">
+                  <div class="items-cube__list" >
+                    <div class="items-block">
+                      <label><input type="checkbox">Калинка</label>
+                      <span>123</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Зубарево хиллз</label>
+                      <span>1234</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Сосенка</label>
+                      <span>430</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Три сосны</label>
+                      <span>89</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Есенино</label>
+                      <span>9</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Кочубеево</label>
+                      <span>29</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Олимпия</label>
+                      <span>87</span>
+                    </div>
+                    <div class="items-block">
+                      <label><input type="checkbox">Вершины</label>
+                      <span>0</span>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+        <div class="button">
+          <button class="clear" id="clear">Очистить</button>
+          <button class="apply">Применить</button>
+        </div>
+      </div>
+    </div>
+  </body>

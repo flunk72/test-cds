@@ -1,9 +1,4 @@
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  text-align: center;
-}
+@import '_interface.sass';
+@import './blocks/_navbar';
+@import './blocks/_items';
 
-img {
-  display: block;
-  margin: 50px auto;
-}
