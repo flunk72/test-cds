@@ -11,22 +11,20 @@
     <div class="main-wrapper">
       <div class="container">
           <div class="navbar">
-              <div class="navbar-city navbar-btn">
+              <div class="navbar-btn" data-target="one">
                 <img src="./static/house.svg" alt="" class="navbar-img">
                 <span class="navbar-text">В черте города</span>
               </div>
-              <div class="navbar-country navbar-btn">
+              <div class="navbar-btn" data-target="two">
                 <img src="./static/house-2.svg" alt="" class="navbar-img">
                 <span class="navbar-text">За городом</span>
               </div>
-              <div class="navbar-map navbar-btn">
+              <div class="navbar-btn" data-target="three">
                 <img src="./static/map1.svg" alt="" class="navbar-img">
                 <span class="navbar-text">На карте</span>
               </div>
             </div>
-      </div>
-      <div class="container">
-        <div class="items" id="tractItems">
+        <div class="items tab-content one" id="tractItems">
               <div class="items-tract">
                 <input type="text" class="items-search" placeholder="Поиск" id="tract">
                 <div class="items-cube__list" id="search">
@@ -140,12 +138,11 @@
                   </div>
               </div>
           </div>
-      </div>
-      <div class="container">
+          <div class="country tab-content two">2 блок с контентом</div>
+          <div class="maps tab-content three">3 блок с контентом</div>
         <div class="button">
           <button class="clear" id="clear">Очистить</button>
           <button class="apply">Применить</button>
         </div>
       </div>
-    </div>
   </body>

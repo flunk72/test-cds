@@ -31,3 +31,33 @@ document.getElementById('clear').addEventListener('click', (e) => {
       el.checked = false;
     });
 })
+
+// вывод в консоль значения чекбокса
+
+let checkbox = document.querySelectorAll('.check'),
+    ppp = [];
+for (i = 0; i < checkbox.length; i++) {
+  checkbox[i].addEventListener("click", checkedCheckboxes)
+}
+
+function checkedCheckboxes() {
+  if (checkbox[i].checked) {
+    ppp.push(checkbox[i].value);
+    console.log(checkbox[i].value);
+ }
+}
+
+
+document.querySelector('.navbar-btn').classList.add('active')
+document.querySelector('.tab-content').classList.add('active')
+
+function selectPanel(e) {
+  let target = e.target.dataset.target;
+  document.querySelectorAll('.navbar-btn, .tab-content').forEach(el => el.classList.remove('active'))
+  e.target.classList.add('active')
+  document.querySelector('.' + target).classList.add('active')
+
+}
+document.querySelectorAll('.navbar-btn').forEach(el => {
+  el.addEventListener('click', selectPanel)
+})
