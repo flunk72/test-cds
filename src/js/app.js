@@ -22,6 +22,7 @@ let filter = () => {
 
 filter();
 
+
 // Сброс чекбоксов
 
 document.getElementById('clear').addEventListener('click', (e) => {
@@ -34,19 +35,11 @@ document.getElementById('clear').addEventListener('click', (e) => {
 
 // вывод в консоль значения чекбокса
 
-let checkbox = document.querySelectorAll('.check'),
-    ppp = [];
-for (i = 0; i < checkbox.length; i++) {
-  checkbox[i].addEventListener("click", checkedCheckboxes)
-}
+let handleCheckboxChange = (e) => console.log(e.target.value)
+const attachCheckboxListener = (el) => el.addEventListener('change', handleCheckboxChange)
+document.querySelectorAll('.check').forEach(attachCheckboxListener)
 
-function checkedCheckboxes() {
-  if (checkbox[i].checked) {
-    ppp.push(checkbox[i].value);
-    console.log(checkbox[i].value);
- }
-}
-
+// смена контента
 
 document.querySelector('.navbar-btn').classList.add('active')
 document.querySelector('.tab-content').classList.add('active')
